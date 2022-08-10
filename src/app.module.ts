@@ -5,7 +5,7 @@ require('dotenv/config');
 
 @Module({
   imports: [MongooseModule.forRoot(
-    `mongodb+srv://admin:${process.env.MONGODB_PASSWORD}@cluster0.gdwgazf.mongodb.net/test`
+    `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.gdwgazf.mongodb.net/test`
   ), UsersModule],
   controllers: [],
   providers: [],
